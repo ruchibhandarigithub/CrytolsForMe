@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Table</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="active">CryptolsForMe<span>.</span>
+    </a>
+    <div class="other">
+        <a href="index.html" >Home</a>
+        <a href="DashBoard.html" class="dashboard">DashBoard</a>
+    </div>
+   
+  </div>
+   
+   <div class="search-and-button">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search..." onclick="filterData()">
+    </div> 
+    <button id="sortMarketCapBtn" class="sort-btn">Sort by Market Cap</button>
+    <button id="sortPercentageChangeBtn" class="sort-btn">Sort by % Change</button>
+   </div>
+   <div class="grid-list-option">
+      <button id="grid"  class="grid-btn" onclick="fetchData(1)">Grid</button>
+      <button id="list"  class="grid-btn" onclick="fetchData(2)">List</button>
+
+   </div>
+   
+    <div id="table-list-container">
+      <div id="crypto">
+      
+        <div id="crypto-grid">
+      
+        
+
+        </div>
+
+      </div>
+      <div id="table">
+        <table id="cryptoTable">
+          <thead>
+             <tr>
+                 <th>LOGO</th>
+                 <th>ID</th>
+                 <th>NAME</th>
+                 <th>SYMBOL</th>
+                 <th>CURRENT PRICE</th>
+                 <th>CHANGE IN PRICE IN PERCENTAGE</th>
+             </tr>
+          </thead>
+          <tbody id="cryptoTableBody">
+          </tbody>
+        </table>
+      </div>
+
+
+    </div> 
+  <script src="script.js"></script>
+  <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '59ec8ea3-6bd5-4bbc-ae12-b304ba0aec48', f: true }); done = true; } }; })();</script>    
+
+</body>
+</html>

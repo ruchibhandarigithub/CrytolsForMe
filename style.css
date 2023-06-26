@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+ }
+ body {
+     
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #000000;
+     height:100vh;
+ 
+}
+   /* css for nav bar start */
+   
+.topnav {
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     padding: 10px 20px ;
+ 
+ 
+}   
+.topnav a {    
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+.topnav .active span{
+     color:blue;
+}  
+.topnav a:hover {
+     background-color: #ddd;
+     color: black;
+}  
+.topnav a.active {
+     font-size: 30px;
+     color: white;
+}
+.dashboard , .bottom{
+     padding: 10px 20px;
+     background-color: blue;
+     color: #fff;
+     border-radius: 100px;
+     text-decoration: none;
+ 
+}
+.bottom{
+     display: inline-block;
+     margin-top: 10px;
+}
+
+/* css for nav bar end */
+.container{
+     display: flex;
+     width:100vw;
+     justify-content: center;
+     gap:100px;
+
+}
+.container .heading{
+     color:white;
+}
+.container .heading .heading-1{
+    color:white;
+    font-size: 120px;
+}
+.container .heading .heading-2{
+    color:blue;
+    font-size: 100px;
+}
+.container .banner{
+    width:300px;
+    height:500px;
+    padding: 10px; /* Optional: Add padding around the image */
+    object-fit: contain;
+    position: relative;
+    animation: moveUpDown 4s linear infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 30px; /* Adjust the distance to move */
+    }
+    100% {
+      top: 0;
+    }
+}
+/* Css for dashboard
+
+*/
+.grid-list-option{
+  
+     display: flex;
+     width:100%;
+   
+   }
+   .grid-btn{
+     border:0;
+   }
+   
+   
+   .grid-list-option button{
+     width: 50vw;
+     padding:10px;
+     text-align: center;
+     outline: none;
+     color:white;
+     background-color: black;
+     
+   }
+   
+   .btn{
+     border-bottom: 5px solid blue;
+     border-left: 0;
+     border-right: 0;
+     border-top: 0;
+   }
+   
+   
+   
+     
+   
+   input{
+     padding: 10px 70px;
+     background-color: rgb(26, 24, 24);
+       border: 0;
+       outline: none;
+       margin:2px;
+     border-radius: 100px;
+   }
+   #table-list-container{
+    margin:50px 30px;
+   }
+   
+   
+     
+   #crypto-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+       gap: 10px;
+       margin: 0 10px;
+       width:90%;
+   
+   }
+     
+   .crypto-card {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       border: 1px solid rgb(26, 24, 24);
+       padding: 10px;
+       color: #fff;
+       border-radius: 10px;
+       background-color: rgb(26, 24, 24);
+   }
+   .crypto-card .image{
+       width:60px;
+       height: 60px;
+       overflow: hidden;
+       
+   
+   }
+   .crypto-card p{
+        font-size: 14px;
+        
+   }
+     
+     .crypto-card .image img{
+       width: 100%;
+       height: auto;
+       object-fit: contain;
+     }
+     
+     .crypto-card h3 {
+       margin-top: 10px;
+       font-size: 16px;
+     }
+     
+     .crypto-card p {
+       margin-top: 5px;
+       font-size: 14px;
+     }
+     
+     
+     table {
+       border: 1px solid #ccc;
+       border-collapse: collapse;
+       margin: 0px 10px;
+       padding: 0;
+       width: 90%;
+       table-layout: fixed;
+   
+     }
+     
+     table caption {
+       font-size: 1.5em;
+       margin: .5em 0 .75em;
+     }
+     
+     table tr {
+       background-color: black;
+       border: 1px solid black;
+       padding: .35em;
+       color:white;
+     }
+     
+     table th,
+     table td {
+       padding: .625em;
+     }
+     
+     table th {
+       font-size: .85em;
+       letter-spacing: .1em;
+       text-transform: uppercase;
+       text-align: left;
+     }
+     .search-and-button{
+      display: flex;
+      justify-content: center;
+      gap:10px      
+     }
+     .sort-btn{
+      border-radius: 100px;
+      background-color: blue;
+      color:white;
+      padding: 10px;
+      border: #000000;
+     }
+        
+      
+    
+
+@media  screen and (max-width:600px) 
+{
+    topnav a.active {
+        font-size: 18px;
+        color: white;
+   }
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px ;
+    
+    
+   }   
+    .container{
+        flex-direction: column;         
+        align-items: center;
+        gap:0;
+   }
+   
+   .container .heading .heading-1{
+       font-size: 30px;
+   }
+   .container .heading .heading-2{
+       font-size: 20px;
+   }
+  }
+  @media  screen and (max-width:900px) {
+    .container{
+        flex-direction: column;         
+        justify-content: center;
+        align-items: center;
+        gap:0;
+   
+   }
+   .container .heading{
+        color:white;
+   }
+   .container .heading .heading-1{
+       font-size: 100px;
+   }
+   .container .heading .heading-2{
+       font-size: 80px;
+   }
+  }
